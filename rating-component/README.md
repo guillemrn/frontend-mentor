@@ -92,3 +92,10 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+  <!-- Thank you state start -->
+  You selected <!-- Add rating here --> out of 5
+  Thank you!
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!
+  <!-- Thank you state end -->
