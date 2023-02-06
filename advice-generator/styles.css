@@ -1,0 +1,102 @@
+:root {
+  --primary: #cee3e9;
+  --neon-green: #52ffa8;
+  --grayish-blue: #4e5d73;
+  --dark-grayish: #323a49;
+  --dark-blue: #1f2632;
+  --font-family: 'Manrope', sans-serif;
+  --size: 2.8rem;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--dark-blue);
+  display: grid;
+  place-items: center;
+  align-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+.card {
+  background-color: var(--dark-grayish);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+  margin: auto 20px;
+}
+.card__advice-id {
+  font-family: var(--font-family);
+  color: var(--neon-green);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.card__advice {
+  font-family: var(--font-family);
+  color: var(--primary);
+  text-align: center;
+  font-size: var(--size);
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 30px;
+  line-height: 42px;
+  letter-spacing: 1px;
+}
+.card__divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.card__divider img {
+  width: 100%;
+}
+.card__button {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--neon-green);
+  cursor: pointer;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -30px;
+  transition: 300ms;
+}
+.card__button:hover {
+  -webkit-box-shadow: 0px 0px 22px -4px rgba(82,255,168,1);
+  -moz-box-shadow: 0px 0px 22px -4px rgba(82,255,168,1);
+  box-shadow: 0px 0px 22px -4px rgba(82,255,168,1);
+}
+footer {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: var(--font-family);
+  color: var(--primary);
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+p > a {
+  color: var(--neon-green);
+}
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
