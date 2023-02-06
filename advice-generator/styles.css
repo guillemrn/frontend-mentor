@@ -17,11 +17,12 @@ html {
 }
 body {
   background-color: var(--dark-blue);
-  display: grid;
-  place-items: center;
-  align-content: center;
   height: 100vh;
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
 }
 .card {
   background-color: var(--dark-grayish);
@@ -83,8 +84,6 @@ body {
   box-shadow: 0px 0px 22px -4px rgba(82,255,168,1);
 }
 footer {
-  position: absolute;
-  bottom: 20px;
   text-align: center;
   font-size: 1.6rem;
   font-family: var(--font-family);
