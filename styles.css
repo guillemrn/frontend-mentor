@@ -4,6 +4,7 @@
   --html: #FF5001;
   --css: #212181;
   --js: #FFBE00;
+  --api: #66B71F;
   --font: 'Plus Jakarta Sans', sans-serif;
 }
 * {
@@ -82,6 +83,9 @@ body {
 }
 .card__js {
   color: var(--js);
+}
+.card__api {
+  color: var(--api);
 }
 .buttos-container {
   display: grid;
