@@ -21,6 +21,9 @@ let NFTCard = new Card(
 let adviceGenerator = new Card(
   "Advice generator app", "./images/advice.png", "https://github.com/guillemrn/frontend-mentor/tree/main/advice-generator", "./advice-generator/index.html"
 )
+let resultSummary = new Card(
+  "Result summary", "./images/results.png", "https://github.com/guillemrn/frontend-mentor/tree/main/results-summary", "./results-summary/index.html"
+)
 
 ratingComponent.languajes.push(
   { html: "HTML" },
@@ -38,8 +41,13 @@ adviceGenerator.languajes.push(
   { js: "JS" },
   { api: "API" }
 )
+resultSummary.languajes.push(
+  { html: "HTML" },
+  { css: "CSS" },
+  { js: "JS" }
+)
 
-cards.push(ratingComponent, NFTCard, adviceGenerator)
+cards.push(ratingComponent, NFTCard, adviceGenerator, resultSummary)
 
 function newCardProjects() {
   cards.forEach((card) => {
