@@ -203,4 +203,7 @@ p > a {
   .card__result h1 {
     margin-top: 230px;
   }
+  body {
+    padding: 0;
+  }
 }
