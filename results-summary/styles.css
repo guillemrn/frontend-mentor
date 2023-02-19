@@ -1,0 +1,194 @@
+:root {
+  --light-red: #ff5757;
+  --orangey-yellow: #ffb01f;
+  --green-teal: #00bd91;
+  --cobalt-blue: #1125d4;
+  --white: #ffffff;
+  --pale-blue: #ebf1ff;
+  --light-lavender: #c8c7ff;
+  --dark-gray-blue: #303b5a;
+  --font-family: 'Hanken Grotesk', sans-serif;
+  --size: 1.6rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--white);
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.card {
+  background-color: var(--white);
+  border-radius: 20px;
+  -webkit-box-shadow: 31px 21px 118px -60px rgba(17,37,212,0.44);
+  -moz-box-shadow: 31px 21px 118px -60px rgba(17,37,212,0.44);
+  box-shadow: 31px 21px 118px -60px rgba(17,37,212,0.44);
+  display: flex;
+}
+
+.card__result {
+  background: #2e2be9;
+  background: -webkit-linear-gradient(to bottom, #7857ff, #2e2be9);
+  background: linear-gradient(to bottom, #7857ff, #2e2be9);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 300px;
+}
+.card__result h1 {
+  font-family: var(--font-family);
+  font-size: 2.4rem;
+  color: var(--light-lavender);
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.rescult__circle {
+  background: hsla(256, 72%, 46%, 1);
+  background: -webkit-linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+  background: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+  padding: 40px;
+  border-radius: 1000px;
+  width: 166px;
+  height: 166px;
+  margin: 0 auto;
+  text-align: center;
+}
+.rescult__circle p {
+  font-family: var(--font-family);
+  font-size: 5rem;
+  color: var(--white);
+  font-weight: 800;
+}
+.rescult__circle span {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  color: var(--light-lavender);
+  font-weight: 500;
+}
+.card__result h3 {
+  font-family: var(--font-family);
+  font-size: 2.8rem;
+  color: var(--white);
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 700;
+  line-height: 42px;
+}
+.card__description {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  color: var(--light-lavender);
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.card__summary {
+  padding: 30px;
+  min-width: 300px;
+}
+.card__summary h2 {
+  font-family: var(--font-family);
+  font-size: 2.4rem;
+  color: var(--dark-gray-blue);
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.card__element {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-family);
+  font-size: var(--size);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.element-name {
+  display: flex;
+  align-items: center;
+}
+.element-name i {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+.reaction {
+  color: var(--light-red);
+}
+.memory {
+  color: var(--orangey-yellow);
+}
+.verbal {
+  color: var(--green-teal);
+}
+.visual {
+  color: var(--cobalt-blue);
+}
+.reaction-bg {
+  background-color: rgba(255, 87, 87, 0.1);
+}
+.memory-bg {
+  background-color: rgba(255, 176, 31, 0.1);
+}
+.verbal-bg {
+  background-color: rgba(0, 189, 145, 0.1);
+}
+.visual-bg {
+  background-color: rgba(17, 37, 212, 0.1);
+}
+.card__element--current {
+  color: var(--dark-gray-blue);
+}
+.card__element--total {
+  color: rgba(48, 59, 90, 0.6);
+}
+.card__button {
+  background: var(--dark-gray-blue);
+  border: none;
+  cursor: pointer;
+  color: var(--white);
+  width: 100%;
+  padding: 10px;
+  font-family: var(--font-family);
+  font-size: var(--size);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+.card__button:hover {
+  background: #2e2be9;
+  background: -webkit-linear-gradient(to bottom, #7857ff, #2e2be9);
+  background: linear-gradient(to bottom, #7857ff, #2e2be9);
+}
+
+footer {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: var(--font-family);
+  color: var(--dark-gray-blue);
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 20px;
+}
+p > a {
+  color: var(--cobalt-blue);
+}
