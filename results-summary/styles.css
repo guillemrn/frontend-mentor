@@ -192,3 +192,15 @@ footer {
 p > a {
   color: var(--cobalt-blue);
 }
+
+@media screen and (max-width: 600px) {
+  .card {
+    flex-flow: column;
+  }
+  .card__result {
+    max-width: 100%;
+  }
+  .card__result h1 {
+    margin-top: 230px;
+  }
+}
