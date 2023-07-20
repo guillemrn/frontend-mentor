@@ -8,58 +8,75 @@ class Card {
     this.image = image
     this.code = code
     this.demo = demo
-    this.languajes = []
+    this.languages = []
   }
 }
 
 let ratingComponent = new Card(
-  "Rating component", "./images/rating.png", "https://github.com/guillemrn/frontend-mentor/tree/main/rating-component", "./rating-component/index.html"
+  "Rating component",
+  "./images/rating.png",
+  "https://github.com/guillemrn/frontend-mentor/tree/main/rating-component",
+  "./rating-component/index.html"
   )
 let NFTCard = new Card(
-  "NFT Card", "./images/nft.png", "https://github.com/guillemrn/frontend-mentor/tree/main/nft-card", "./nft-card/index.html"
+  "NFT Card",
+  "./images/nft.png",
+  "https://github.com/guillemrn/frontend-mentor/tree/main/nft-card",
+  "./nft-card/index.html"
 )
 let adviceGenerator = new Card(
-  "Advice generator app", "./images/advice.png", "https://github.com/guillemrn/frontend-mentor/tree/main/advice-generator", "./advice-generator/index.html"
+  "Advice generator app",
+  "./images/advice.png",
+  "https://github.com/guillemrn/frontend-mentor/tree/main/advice-generator",
+  "./advice-generator/index.html"
 )
 let resultSummary = new Card(
-  "Result summary", "./images/results.png", "https://github.com/guillemrn/frontend-mentor/tree/main/results-summary", "./results-summary/index.html"
+  "Result summary",
+  "./images/results.png",
+  "https://github.com/guillemrn/frontend-mentor/tree/main/results-summary",
+  "./results-summary/index.html"
 )
 
-ratingComponent.languajes.push(
+ratingComponent.languages.push(
   { html: "HTML" },
   { css: "CSS" },
   { js: "JS" }
 )
-NFTCard.languajes.push(
+NFTCard.languages.push(
   { html: "HTML" },
-  { css: "CSS" },
-  { js: "JS" }
+  { css: "CSS" }
 )
-adviceGenerator.languajes.push(
+adviceGenerator.languages.push(
   { html: "HTML" },
   { css: "CSS" },
   { js: "JS" },
   { api: "API" }
 )
-resultSummary.languajes.push(
+resultSummary.languages.push(
   { html: "HTML" },
-  { css: "CSS" },
-  { js: "JS" }
+  { css: "CSS" }
 )
 
-cards.push(ratingComponent, NFTCard, adviceGenerator, resultSummary)
+cards.push(
+  ratingComponent,
+  NFTCard,
+  adviceGenerator,
+  resultSummary
+)
 
 function newCardProjects() {
+  let cardsHTML = ''
+
   cards.forEach((card) => {
     const newCard = `
     <div class="card">
       <figure><img src=${card.image} alt="${card.title}"></figure>
       <h2 class="card__title">${card.title}</h2>
       <div class="card__lang">
-        <p class="card__html">${card.languajes[0].html}</p>
-        <p class="card__css">${card.languajes[1].css}</p>
-        <p class="card__js">${card.languajes[2].js}</p>
-        <p class="card__api">${card.languajes.length == 3 ? '' : card.languajes[3].api}</p>
+        <p class="card__html">${card.languages[0]?.html || ''}</p>
+        <p class="card__css">${card.languages[1]?.css || ''}</p>
+        <p class="card__js">${card.languages[2]?.js || ''}</p>
+        <p class="card__api">${card.languages[3]?.api || ''}</p>
       </div>
       <div class="buttos-container">
         <a href=${card.code} target="_blank">
@@ -71,8 +88,9 @@ function newCardProjects() {
       </div>
     </div>
     `
-    cardsContainer.innerHTML += newCard
+    cardsHTML += newCard
   })
+  cardsContainer.innerHTML += cardsHTML
 }
 
 newCardProjects()
