@@ -18,6 +18,93 @@ html {
 }
 body {
   font-family: var(--font-family);
+  background-color: var(--off-white);
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 10px;
+  border-bottom-right-radius: 100px;
+  padding: 40px 30px;
+  width: 550px;
+}
+form {
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--light-grey);
+  position: relative;
+}
+form > div {
+  display: flex;
+  gap: 20px;
+}
+.input-text{
+  display: flex;
+  flex-flow: column;
+}
+label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--smokey-grey);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+input {
+  border-radius: 8px;
+  border: 1px solid var(--light-grey);
+  padding: 12px;
+  margin-top: 4px;
+  width: 100px;
+  color: var(--off-black);
+  font-size: 2rem;
+  font-weight: 700;
+}
+input:focus {
+  outline: 1px solid var(--purple);
+}
+input::placeholder {
+  color: var(--smokey-grey);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.button {
+  background-color: var(--purple);
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--purple);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 300ms;
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+}
+.button:hover {
+  background-color: var(--off-black);
+  border: 1px solid var(--off-black);
+}
+.button svg {
+  width: 50%;
+}
+
+.result-container {
+  padding-top: 30px;
+}
+.result-container h2 {
+  color: var(--off-black);
+  font-size: 6rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 6rem;
+}
+.number-result {
+  color: var(--purple);
 }
 
 
@@ -31,4 +118,25 @@ footer {
 }
 p > a {
   color: var(--purple);
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+  .button {
+    right: 50%;
+  }
+  form > div {
+    display: flex;
+    gap: 20px;
+    flex-flow: column;
+    margin-bottom: 30px;
+  }
+  input {
+    width: 100%;
+  }
+  .result-container {
+    margin-top: 30px;
+  }
 }

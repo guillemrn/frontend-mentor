@@ -11,19 +11,42 @@
   <title>Frontend Mentor | Age calculator app</title>
 </head>
 <body>
+  <div class="card">
+    <form action="">
+      <div>
+        <div class="input-text">
+          <label for="">Day</label>
+          <input type="number" placeholder="DD">
+        </div>
+        <div class="input-text">
+          <label for="">Month</label>
+          <input type="number" placeholder="MM">
+        </div>
+        <div class="input-text">
+          <label for="">Year</label>
+          <input type="number" placeholder="YYYY">
+        </div>
+      </div>
 
-  Day
-  DD
+      <button class="button">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </figure>
+      </button>
+    </form>
 
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+    <div class="result-container">
+      <h2 class="age-result">
+        <span class="number-result">--</span> years
+      </h2>
+      <h2 class="age-result">
+        <span class="number-result">--</span> months
+      </h2>
+      <h2 class="age-result">
+        <span class="number-result">--</span> days
+      </h2>
+    </div>
+  </div>
 
   <footer>
     <p>Challenge by <a href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q" target="_blank">Frontend Mentor</a>.</p>
